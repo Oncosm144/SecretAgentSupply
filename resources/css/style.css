@@ -1,0 +1,149 @@
+html,
+body {
+  font-family: Helvetica;
+  color: seashell;
+  font-size: 18px;
+  width: 1280px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  background: url(../images/background.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-weight: bold;
+  height: 25rem;
+  width: auto;
+}
+
+.logo {
+  background-color: black;
+  font-weight: bold;
+  width: 100%;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+}
+
+.top img {
+  height: 1.5rem;
+  padding: 0 0.5rem;
+}
+
+.top h2 {
+  font-size: 1rem;
+  padding: 0.66rem 0.5rem;
+}
+
+.new {
+  background-color: black;
+  font-weight: bold;
+  width: 20rem;
+  height: auto;
+  padding: 2rem 3rem;
+  position: relative;
+  top: 9rem;
+}
+
+.new h2 {
+  font-size: 1rem;
+  padding: 0;
+}
+
+.new h1 {
+  font-size: 2rem;
+  padding-top: 0.25rem;
+}
+
+nav {
+  background-color: firebrick;
+  height: 2.50rem;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+li a {
+  color: seashell;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  top: 0.75rem;
+}
+
+.features {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-top: 3rem;
+  font-weight: bold;
+}
+
+.features div {
+  border: 4px solid black;
+  width: 30%;
+  height: auto;
+  text-align: center;
+}
+
+.pen img,
+.watch img {
+  height: 9rem;
+  width: auto;
+  padding: 2rem;
+}
+
+.glasses img {
+  max-width: 50%;
+  height: auto;
+  padding: 4.4rem;
+}
+
+.features h3 {
+  background-color: black;
+  padding: 1rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  font-weight: bold;
+}
+
+.contact div {
+  width: 35%;
+  height: auto;
+  margin-bottom: 4rem;
+}
+
+.contact h3 {
+  background-color: black;
+  padding: 1rem 2rem;
+}
+
+p {
+  color: black;
+}
+
+footer {
+  background-color: black;
+  height: 5rem;
+  width: auto;
+  text-align: center;
+}
+
+footer h3 {
+  text-align: left;
+  font-weight: bold;
+  padding-top: 2.5rem;
+}
