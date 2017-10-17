@@ -102,6 +102,7 @@ li a {
   padding: 2rem;
 }
 
+/* separated glasses image styling due to distortion with specified height */
 .glasses img {
   max-width: 50%;
   height: auto;
@@ -146,4 +147,66 @@ footer h3 {
   text-align: left;
   font-weight: bold;
   padding-top: 2.5rem;
+}
+/* tablet resizing */
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+  ul {
+    list-style: none;
+    content: none;
+    justify-content: center;
+  }
+  li {
+    content: "Menu"
+  }
+  .features div {
+    width: 47%;
+    overflow: hidden;
+  }
+  .contact div {
+    width: 35%;
+  }
+}
+/* mobile resizing */
+@media only screen and (max-width: 470px) {
+  .container {
+    max-width: 470px;
+  }
+  header {
+    height: 15rem;
+  }
+  .new {
+    padding: 1rem 2rem;
+    top: 10rem;
+  }
+  .new h2 {
+    font-size: 0.77rem;
+  }
+  .new h1 {
+    font-size: 1rem;
+  }
+  ul {
+    list-style: none;
+    content: none;
+    justify-content: center;
+  }
+  li {
+    content: "Menu"
+  }
+  .features div {
+    width: 90%;
+    overflow: hidden;
+  }
+  .contact {
+    margin-top: 0.5rem;
+    flex-flow: column wrap;
+  }
+  .contact div {
+    width: 90%;
+  }
+  footer {
+    text-align: center;
+  }
 }
