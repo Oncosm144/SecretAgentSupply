@@ -65,6 +65,8 @@ header {
 nav {
   background-color: firebrick;
   height: 2.50rem;
+  width: auto;
+
 }
 
 ul {
@@ -78,6 +80,10 @@ li a {
   text-decoration: none;
   position: relative;
   top: 0.75rem;
+}
+
+.mobile a {
+  display: none;
 }
 
 .features {
@@ -106,12 +112,12 @@ li a {
 .glasses img {
   max-width: 50%;
   height: auto;
-  padding: 4.4rem;
+  padding: 4.64rem;
 }
 
 .features h3 {
   background-color: black;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .contact {
@@ -150,20 +156,41 @@ footer h3 {
 }
 /* tablet resizing */
 @media only screen and (max-width: 1024px) {
-  .container {
+  html,
+  body {
     max-width: 1024px;
+    margin: 0;
+  }
+  .container {
+    width: 100%;
+    height: auto;
   }
   ul {
-    list-style: none;
-    content: none;
-    justify-content: center;
+    display: flex;
+    margin-left: 45%;
   }
-  li {
-    content: "Menu"
+  .container a {
+    display: none;
   }
-  .features div {
+  .mobile a {
+    display: block;
+    }
+  .features {
+    display: inline-flex;
+    margin: 3rem 0;
+    flex-shrink: 1;
+  }
+   .features div {
     width: 47%;
-    overflow: hidden;
+    height: auto;
+    margin: 0;
+  }
+  .glasses {
+    display: none;
+  }
+  .contact {
+    display: flex;
+    margin: 0;
   }
   .contact div {
     width: 35%;
@@ -171,8 +198,13 @@ footer h3 {
 }
 /* mobile resizing */
 @media only screen and (max-width: 470px) {
-  .container {
+  body {
     max-width: 470px;
+    margin: 0;
+  }
+  .container {
+    width: 100%;
+    height: auto;
   }
   header {
     height: 15rem;
@@ -187,26 +219,31 @@ footer h3 {
   .new h1 {
     font-size: 1rem;
   }
-  ul {
-    list-style: none;
-    content: none;
-    justify-content: center;
+  .container a {
+    display: none;
   }
-  li {
-    content: "Menu"
+  .mobile a {
+    display: block;
+  }
+  .features {
+    display: block;
+    margin: 3rem 1rem;
   }
   .features div {
     width: 90%;
-    overflow: hidden;
+  }
+  .watch,
+  .glasses {
+    display: none;
   }
   .contact {
-    margin-top: 0.5rem;
-    flex-flow: column wrap;
+    display: block;
   }
   .contact div {
     width: 90%;
+    margin: 0.5rem 1rem;
   }
-  footer {
+  footer h3 {
     text-align: center;
   }
 }
